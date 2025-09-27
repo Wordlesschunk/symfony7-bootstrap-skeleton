@@ -1,0 +1,67 @@
+<div class="d-flex flex-column flex-shrink-0 p-3 text-white sidebar">
+    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+        <i class="bi bi-bootstrap-fill me-2" style="font-size: 1.5rem;"></i>
+        <span class="fs-4">{{ app_name }}</span>
+    </a>
+    <hr>
+    <ul class="nav nav-pills flex-column mb-auto">
+        <li class="nav-item">
+            <a href="#" class="nav-link active" aria-current="page">
+                <i class="bi bi-house-door me-2"></i>
+                Home
+            </a>
+        </li>
+        <li>
+            <a href="#" class="nav-link">
+                <i class="bi bi-speedometer2 me-2"></i>
+                Dashboard
+            </a>
+        </li>
+        <li>
+            <a href="#" class="nav-link">
+                <i class="bi bi-table me-2"></i>
+                Orders
+            </a>
+        </li>
+
+        <!-- Collapsible Menu Item -->
+        <li>
+            <a class="nav-link d-flex justify-content-between align-items-center"
+               data-bs-toggle="collapse" href="#productsSubmenu" role="button"
+               aria-expanded="false" aria-controls="productsSubmenu">
+                <span><i class="bi bi-grid me-2"></i> Products</span>
+                <i class="bi bi-chevron-down small"></i>
+            </a>
+            <div class="collapse submenu" id="productsSubmenu">
+                <ul class="nav flex-column ms-1">
+                    <li><a href="#" class="nav-link">All Products</a></li>
+                    <li><a href="#" class="nav-link">Add New</a></li>
+                    <li><a href="#" class="nav-link">Categories</a></li>
+                </ul>
+            </div>
+        </li>
+
+        <li>
+            <a href="#" class="nav-link">
+                <i class="bi bi-people me-2"></i>
+                Customers
+            </a>
+        </li>
+    </ul>
+    <hr>
+    <div class="dropdown">
+        <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+           id="dropdownUserSidebar" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="https://github.com/mdo.png" alt="" width="32" height="32"
+                 class="rounded-circle me-2">
+            <strong>mdo</strong>
+        </a>
+        <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUserSidebar">
+            <li><a class="dropdown-item" href="#">New project...</a></li>
+            <li><a class="dropdown-item" href="#">Settings</a></li>
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Sign out</a></li>
+        </ul>
+    </div>
+</div>
